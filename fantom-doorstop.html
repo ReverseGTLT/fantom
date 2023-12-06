@@ -1,0 +1,662 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Fri Dec 01 2023 12:01:56 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="645f6a5d3b535631689c9868" data-wf-site="63fd0635a178910f353e6536">
+<head>
+  <meta charset="utf-8">
+  <title>Fantom Doorstop</title>
+  <meta content="Fantom Doorstop" property="og:title">
+  <meta content="Fantom Doorstop" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/fantom-doorstoop.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+</head>
+<body class="body">
+  <div class="main-css w-embed">
+    <style>
+	html {
+  	font-size: -webkit-calc(10000vw / 1440);
+    font-size: -moz-calc(10000vw / 1440);
+    font-size: calc(10000vw / 1440);
+    font-size: 6.94444vw;
+  }
+  video {
+  	object-fit: cover;
+  }
+  /*Buttons*/
+  .button_secondary::after,
+  .button_next-product::after {
+  	content: "";
+    position: absolute;
+    bottom: -0.02rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24%;
+    height: 0.02rem;
+    border-radius: 0.03rem;
+    background: #000;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+  .button_secondary:hover:after,
+  .button_next-product:hover:after {
+  	transition: width .2s ease-in-out;
+  	width: 90%;
+    opacity: 100;
+  }
+  /*Navbar*/
+  .navbar_link {
+  }
+	.w-nav-link.w--current::after {
+  	content: "";
+    position: absolute;
+    bottom: -0.02rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 0.02rem;
+    border-radius: 0.03rem;
+    background: #662C7F;
+    opacity: 100;
+    transition: all .2s ease-in-out;
+  }
+	.navbar_link::after {
+  	content: "";
+    position: absolute;
+    bottom: -0.02rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24%;
+    height: 0.02rem;
+    border-radius: 0.03rem;
+    background: #000;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+  .navbar_link:hover:after {
+  	transition: width .2s ease-in-out;
+  	width: 90%;
+    opacity: 100;
+  }
+  /*Splide slider*/
+  .splide button:disabled {
+  	background: #F8F8F8;
+    color: #1D1F21;
+  }
+  .splide--draggable>.splide__track>.splide__list>.splide__slide {
+  	-webkit-user-select: none;
+    user-select: none;
+  }
+  .first-slide_content:hover .label_1 {
+  	color: #1D1F21 !important;
+  }
+  /*Accordion*/
+  .accordion_list-2 .accordion_item-2:nth-last-child(-n+1) {
+  	border: none !important;
+  }
+  @media (max-width: 1023px) {
+    html {
+      font-size: -webkit-calc(10000vw / 768);
+      font-size: -moz-calc(10000vw / 768);
+      font-size: calc(10000vw / 768);
+      font-size: 13.0208333vw;
+    }
+  }
+  @media (max-width: 480px) {
+    html {
+      font-size: -webkit-calc(10000vw / 375);
+      font-size: -moz-calc(10000vw / 375);
+      font-size: calc(10000vw / 375);
+      font-size: 26.67vw;
+    }
+  }	
+</style>
+  </div>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="navbar_container">
+      <a href="index.html" id="w-node-c86a55c3-708d-00b9-52c8-94459ecaaf2c-689c9868" class="navbar_logo w-nav-brand"><img src="images/logo_draft.png" loading="lazy" alt="" class="image_cover"></a>
+      <nav role="navigation" id="w-node-c86a55c3-708d-00b9-52c8-94459ecaaf2e-689c9868" class="navbar_links w-nav-menu">
+        <a href="index.html" class="navbar_link w-nav-link">Головна</a>
+        <a href="catalog.html" class="navbar_link w-nav-link">Каталог</a>
+        <a href="faqs.html" class="navbar_link w-nav-link">Питання - відповіді</a>
+        <a href="contact-us.html" class="navbar_link w-nav-link">Контакти</a>
+      </nav>
+      <div id="w-node-c86a55c3-708d-00b9-52c8-94459ecaaf37-689c9868" class="lang_wrap">
+        <a href="fantom-doorstop.html" aria-current="page" class="navbar_link w-nav-link w--current">Укр</a>
+        <a href="eng/fantom-doorstop.html" class="navbar_link w-nav-link">Eng</a>
+      </div>
+      <div id="w-node-c86a55c3-708d-00b9-52c8-94459ecaaf3c-689c9868" class="navbar_btn w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="product-page_wrapper">
+    <section class="section">
+      <div class="video-hero_container">
+        <div class="video-hero_content-left-bottom">
+          <div class="title-wrap_product">
+            <div class="gap_10-product">
+              <h1 class="heading_product">Стопор FANTOM</h1>
+              <div>Головною функцією стопора для дверей Fantom є його безпечність, відсутність частин, що перешкоджають руху, а також його естетично привабливий дизайн.</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-hero">
+          <div class="video_cover w-embed"><video id="video1" width="100%" height="100%" autoplay="" loop="true" muted="" playsinline="" controls="">
+              <source type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/dfeb951598484b9a8ea2b19cb8441077.mp4">
+            </video></div>
+          <div class="video-hero_overlay"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="gap_20">
+        <div class="container_flex-3">
+          <div class="heading_medium">Ключові переваги:</div>
+          <div class="flex-3_list">
+            <div class="flex-3_item dark"></div>
+            <div class="flex-3_item"><img src="images/benefits_12x.png" loading="lazy" alt="" class="flex-3_item-img">
+              <div class="label_1">Без ризику спотикання</div>
+            </div>
+            <div class="flex-3_item"><img src="images/benefits_22x.png" loading="lazy" alt="" class="flex-3_item-img">
+              <div class="label_1">Запобігання пошкодженням стін</div>
+            </div>
+            <div class="flex-3_item"><img src="images/benefits_32x.png" loading="lazy" alt="" class="flex-3_item-img">
+              <div class="label_1">Фіксує двері у відкритому положенні</div>
+            </div>
+          </div>
+        </div>
+        <div class="container_flex-2 reverse">
+          <div class="flex-2_item-content">
+            <div class="flex-2_item-wrap">
+              <h1 class="heading_medium">Стопор для дверей з функцією фіксації дверей у відкритому положенні, який монтується врівень з підлогою.</h1>
+              <div>Вбудований штифт усуває ризик спотикань і забезпечує сучасний та привабливий вигляд. Вбудована конструкція з рідкоземельних магнітів гарантує виняткову механічну функціональність.<br><br>Стопор для дверей Fantom комплектується штифтом і міцною пластиною з нейлону. Ця комбінація призначена для універсального використання і має високу надійність та плавну функціональність.</div>
+            </div>
+          </div>
+          <div class="flex-2_item-img"><img src="images/fantoms_image.jpg" loading="lazy" sizes="(max-width: 991px) 95vw, 48vw" srcset="images/fantoms_image-p-500.jpg 500w, images/fantoms_image-p-800.jpg 800w, images/fantoms_image-p-1080.jpg 1080w, images/fantoms_image-p-1600.jpg 1600w, images/fantoms_image-p-2000.jpg 2000w, images/fantoms_image.jpg 2043w" alt="" class="image_cover"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="gap_10">
+        <div class="heading_medium">Доступний в 6 кольорах</div>
+        <div class="splide slider-product">
+          <div class="splide__arrows">
+            <div class="embed w-embed"><button class="splide__arrow splide__arrow--prev">
+                <svg width="0.18rem" height="0.18rem" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.25 13.5L6.75 9L11.25 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button></div>
+            <div class="embed w-embed"><button class="splide__arrow splide__arrow--next">
+                <svg width="0.18rem" height="0.18rem" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button></div>
+          </div>
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <div class="slide_image-height-1"><img sizes="(max-width: 479px) 64vw, (max-width: 767px) 89vw, 44vw" srcset="images/Fantom-Clear2x-p-500.jpg 500w, images/Fantom-Clear2x.jpg 670w" src="images/Fantom-Clear2x.jpg" loading="lazy" alt="" class="image_cover"></div>
+                <div class="slide_content">
+                  <div class="label_1">Прозорий</div>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="slide_image-height-1"><img sizes="(max-width: 479px) 64vw, (max-width: 767px) 89vw, 44vw" srcset="images/Fantom-Black2x-p-500.jpg 500w, images/Fantom-Black2x.jpg 670w" src="images/Fantom-Black2x.jpg" loading="lazy" alt="" class="image_cover"></div>
+                <div class="slide_content">
+                  <div class="label_1">Чорний</div>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="slide_image-height-1"><img sizes="(max-width: 479px) 64vw, (max-width: 767px) 89vw, 44vw" srcset="images/Fantom-Brass2x-p-500.jpg 500w, images/Fantom-Brass2x.jpg 670w" src="images/Fantom-Brass2x.jpg" loading="lazy" alt="" class="image_cover"></div>
+                <div class="slide_content">
+                  <div class="label_1">Латунь</div>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="slide_image-height-1"><img sizes="(max-width: 479px) 64vw, (max-width: 767px) 89vw, 44vw" srcset="images/Fantom-Chrome2x-p-500.jpg 500w, images/Fantom-Chrome2x.jpg 670w" src="images/Fantom-Chrome2x.jpg" loading="lazy" alt="" class="image_cover"></div>
+                <div class="slide_content">
+                  <div class="label_1">Хром</div>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="slide_image-height-1"><img sizes="(max-width: 479px) 64vw, (max-width: 767px) 89vw, 44vw" srcset="images/Fantom-White2x-p-500.jpg 500w, images/Fantom-White2x.jpg 670w" src="images/Fantom-White2x.jpg" loading="lazy" alt="" class="image_cover"></div>
+                <div class="slide_content">
+                  <div class="label_1">Білий</div>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="slide_image-height-1"><img sizes="(max-width: 479px) 64vw, (max-width: 767px) 89vw, 44vw" srcset="images/Fantom-Satin2x-p-500.jpg 500w, images/Fantom-Satin2x.jpg 670w" src="images/Fantom-Satin2x.jpg" loading="lazy" alt="" class="image_cover"></div>
+                <div class="slide_content">
+                  <div class="label_1">Сатин</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="gap_10">
+        <div class="heading_medium">Відео з монтажу</div>
+        <div class="video-installation_container">
+          <div style="opacity:1;display:flex" class="video-button_align-center">
+            <div id="button_sound1" data-w-id="72d0d5d0-c36c-4d61-3509-9fcf032092de" class="button_sound">
+              <div>Відтворити відео</div>
+            </div>
+          </div>
+          <div class="video-installation">
+            <div class="video_cover w-embed"><video id="video1" width="100%" height="100%" autoplay="" loop="true" muted="" playsinline="" controls="">
+                <source type="video/mp4" src="https://cdn.shopify.com/s/files/1/0027/2692/0252/files/FANTOM_DOORSTOP_INSTALLATION_VIDEO-1.mp4?v=1652408511%22%20type=%22video/mp4">
+              </video></div>
+            <div class="video-hero_overlay"></div>
+          </div>
+        </div>
+        <div class="div-block">
+          <div class="gap_6">
+            <div class="heading_small">Склад</div>
+            <div>Магніт N33, нейлонова пластина, 2 гвинти з нержавіючої сталі, відповідний штифт для втулки, втулка для підлоги, інструкція зі встановлення</div>
+          </div>
+          <div class="buttons-wrap contents">
+            <a data-w-id="fefbe4ac-64a2-7e6d-637f-b206d1704b8a" href="catalog.html" class="button_primary w-inline-block">
+              <div class="anim_btn-label">
+                <div>Download Tech Sheet</div>
+              </div>
+              <div style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="primary_anim-icon">
+                <div class="icon w-embed"><svg width="100%" height="100%" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75366 9.00024H14.2537" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M9.00037 3.74805L14.2504 8.99805L9.00037 14.248" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></div>
+              </div>
+            </a>
+            <a href="distributors.html" class="button_secondary w-inline-block">
+              <div>How sale</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="gap_10">
+        <div class="heading_medium">Питання - Відповіді</div>
+        <div class="accordion_container">
+          <div class="accordion_wrap">
+            <div class="accordion_list">
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Чи можна встановити стопор для дверей Fantom у килим?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>У килим з коротким ворсом - звісно так. Він підходить для килимів з коротким ворсом, оскільки ви можете притиснути втулку вниз до підлоги, щоб отримати надійну опору, не заглиблюючись у ворс килима.<br><br>Килим з довгим або глибоким ворсом важче монтажувати через зазор, який утворюється між дверима та втулкою. (Оскільки двері повинні проходити по килиму, а втулка має вдаватися глибоко в ворс. Ймовірно, це створить зазор більше ніж 15 мм, що перевищує рекомендований максимум.) У нас є спеціальний пробій для килимів.<br><br>ВАЖЛИВА ПОРАДА ЩОДО ВСТАНОВЛЕННЯ – Під час встановлення на килим, вам потрібно просвердлити або відрізати частину килима, яку ви плануєте свердлити, щоб видалити ворс килима. Якщо ви цього не зробите, килим обгорне ваше свердло. Якщо у вас немає пробою для килимів, ви можете використовувати ножиці Stanley або невелике долото.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">яким чином відпускаються двері після блокування?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Пластина Striker розроблена з наклоном для входу/виходу з одного боку та запірною губою з іншого боку. Посередині є зона утримування у відкритому стані, коли двері знаходяться у відчиненому положенні. Щоб вивільнити штифт і закрити двері, просто потягніть за двері, як зазвичай, і штифт зісковзне з пластини, поки двері не звільняться. Тоді штифт впаде назад у гільзу. Просто і легко.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Який розмір дірки, яку потрібно свердлити в підлозі?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Стандартна дірка в підлозі має розмір 14 мм у діаметрі і глибину 50 мм.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Наскільки потужний магніт? Він буде утримувати двері відкритими?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Цей магніт виготовлений із рідкоземельних металів N33 Neodymium. Він виводить штифт із підлоги за 2/25 секунди. Якщо він перебуває у положенні утримання дверей відкритими, то він утримує вашу дверь там, навіть проти найсильніших потоків повітря. Він робить це завдяки нашому патентованомій конструкції пластини.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Які варіанти кольорів доступні?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Fantom доступний в широкому спектрі кольорів, таких як чорний, білий, латунь, хром сатін, хром та прозорий.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Яка рекомендована відстань між підлогою та нижньою частиною дверей?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Рекомендується, щоб відстань не перевищувала 15 мм. Якщо відстань складає 15 мм або більше, ви можете придбати 5-міліметровий проставку Fantom, яка може бути встановленою між дверима та пластиною.<br><br>Ця проставка спеціально розроблена, щоб опустити пластину до припустимої відстані та водночас дозволити магніту сісти зверху на пластину для забезпечення нормального функціонування.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Скільки проставок я можу використовувати?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Ми рекомендуємо використовувати лише 1 проставку. Це означає, що проміжок в 20 мм під вашими дверима зменшиться до менше ніж 15 мм. Якщо ваш проміжок більший, то Fantom не підходить.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Чи можливо отримати довший штифт?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Ні, штифт має висуватися з втулки не більше ніж на 15 мм. Якщо між дверима та підлогою є великі проміжки, компоненти дверей потрібно укладати ближче до підлоги. Ми пропонуємо проставку 5 мм, яку можна замовити на сайті.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">У мене великі двері і вони доволі важкі.</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Не переживайте, більші двері не вплинуть на функціонування Fantom взагалі. Просто встановлюйте як завжди. Штифт все одно вийматиметься з такою самою швидкістю і зупинятиме двері, а міцність тримання у відкритому стані не зміниться.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">чи буде fantom працювати, якщо існуючі двері мають доводчик?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Як дверний стопор - так, він працюватиме на 100%. Єдине, що ми не можемо сказати напевно, це те, чи буде він точно працювати як утримувач відкритих дверей. Причина в тому, що це повністю залежить від типу та міцності доводчика, а також від налаштування самого доводчика.<br><br>Ми маємо багато клієнтів, які використовують його таким чином, і все ще мають успіх у користуванні ним як утримувача відкритих дверей.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">як вилучити штифт з втулки?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Це дуже просто! Просто повільно повертайте двері в напрямку втулки. Коли ви підходите ближче до втулки, ви побачите, що штифт починає витягуватися з неї. Тримаючи двері на цьому місці, просуньте палець під штифт і натисніть на нього збоку. Потім відсуньте двері і витягніть штифт!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Яке обслуговування потрібно?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Незначне, це залежить від того, де його встановлено. Для звичайного встановлення не буде потреби в обслуговуванні. Проте якщо його встановлено у місцях, які піддаються впливу високого рівня пилу (наприклад, відкриті майданчики чи палуби) або рідин (наприклад, у пабах/барах і на фабриках), то може бути потрібно вийняти шпильку з гільзи, протерти її, висушити і повернути назад у рукав.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">У мене є кіт, і я хочу залишити двері трохи відкритими. Fantom підійде для цього?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Так, якщо ви використовуєте «Pivot» фіксатор, який не має поворотного краю, ви можете тримати двері відкритими в будь-якому місці, і тоді двері можна продовжувати штовхати з минулого місця, коли це потрібно.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">У мене є дверні рами з алюмінію. Чи працюватиме Fantom?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Так, але якщо алюмінієвий профіль рами порожнистий, вам знадобиться використовувати корпус магніту, спеціально розроблений для цієї ситуації, і доступний на нашому веб-сайті. В іншому випадку двері потрібно буде модифікувати, щоб створити тверду область, в якій розташований магніт. Це може бути частина дерева, яку вирізають і приклеюють на потрібне місце, але все залежить від типу профілю на вашій двері. Тому краще звернутися до фахівця і отримати консультацію.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">Я маю двері півот і я хочу встановити Fantom посередині замість засувок. Це можливо зробити?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Так! У нас є нова спеціально розроблена пластина без упорної кромки спеціально для поворотних дверей. Це дозволяє утримувати двері на місці, але також дозволяє дверям зісковзувати в обох напрямках. За бажанням ви можете мати кілька Fantom, щоб створити різні позиції відкриття. Ви можете замовити поворотний фіксатор тут або придбати його в одного з наших магазинів.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_item">
+                <div class="accordion_header">
+                  <div class="accordion_icon">
+                    <div class="accordion_icon-open">+</div>
+                    <div class="accordion_icon-close">-</div>
+                  </div>
+                  <div class="heading_small">У мене подвійні двері. Чи можна встановити Fantom у верхній частині дверей?</div>
+                </div>
+                <div class="accordion_content">
+                  <div class="accordion_padding-1">
+                    <div class="label_1">Відповідь:</div>
+                    <div>Звісно! Подвійні двері мають одну дверцяту, через яку проходять, і одну нерухому дверцяту, яка традиційно утримується в певному положенні за допомогою накладних засувок, а також може бути відкрита за бажанням. Тепер ви можете використовувати повністю прихований стопор для дверей Fantom зверху і знизу дверей замість накладних засувок. Це означає, що у вас будуть видимі втулки на підлозі замість металевої кришки для накладних засувок, і коли двері будуть утримані в певному положенні, Fantom буде повністю прихованим.<br><br>Найкраще в тому, що відкриваючи обидві двері, вам просто потрібно натиснути їх легенько, щоб відпустити, і потім ще раз легенько натиснути, щоб знову зафіксувати їх. Це особливо зручно для високих дверей, оскільки ви не повинні дотягуватись до верхньої накладної засувки! Щодо відкриття будь-яких дверей, ви можете використовувати Fantom як звичайно, щоб зупинити двері та утримувати їх відкритими.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container_flex-4">
+        <div class="label_1">Далі</div>
+        <a href="fantom-defender.html" class="button_next-product w-inline-block">
+          <div class="heading_medium">FAntom defender</div>
+          <div class="icon w-embed"><svg width="100%" height="100%" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75366 9.00024H14.2537" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M9.00037 3.74805L14.2504 8.99805L9.00037 14.248" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></div>
+        </a>
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    <div class="footer_container">
+      <div class="footer_column-light">
+        <a href="index.html" class="logo_link w-inline-block"><img src="images/logo_draft.png" loading="lazy" alt="" class="logo_footer-img"></a>
+        <div>© 2023 Fantom Hardware Ukraine</div>
+      </div>
+      <div class="footer_column-dark">
+        <div class="footer_list">
+          <div class="footer_nav-list">
+            <div class="footer_nav-item">
+              <div class="label_1">Продукти Fantom</div>
+              <div class="footer_nav-links">
+                <a href="fantom-doorstop.html" aria-current="page" class="footer_nav-link w--current">Doorstop</a>
+                <a href="fantom-defender.html" class="footer_nav-link">Defender</a>
+                <a href="fantom-pivot.html" class="footer_nav-link">Pivot</a>
+                <a href="fantom-barn-door.html" class="footer_nav-link">BArn Door</a>
+                <a href="catalog.html" class="footer_nav-link">Аксесуари</a>
+              </div>
+            </div>
+            <div class="footer_nav-item">
+              <div class="label_1">Інформаційні сторінки</div>
+              <div class="footer_nav-links">
+                <a href="faqs.html" class="footer_nav-link">Питання - відповіді</a>
+                <a href="contact-us.html" class="footer_nav-link">Контакти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_social-list">
+          <a href="https://www.instagram.com/fantom_doorstop/" target="_blank" class="social-link w-inline-block">
+            <div>Instagram</div>
+          </a>
+          <a href="https://www.facebook.com/fantomdoorstop/" target="_blank" class="social-link w-inline-block">
+            <div>facebook</div>
+          </a>
+          <a href="https://www.youtube.com/@fantomhardware4486" target="_blank" class="social-link w-inline-block">
+            <div>Youtube</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63fd0635a178910f353e6536" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!--  Splide slider  -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  <!-- Splide Slider -->
+  <script>
+let mySplide = new Splide(".slider-product", {
+  // Desktop on down
+  perPage: 4,
+  perMove: 1,
+  fixedWidth : '3.35rem',
+  fixedHeight: '4.88rem',
+  type: 'slide',
+  arrows: 'slider',
+  pagination: false,
+  speed: 600,
+  dragAngleThreshold: 60,
+  waitForTransition: true,
+  updateOnMove: true,
+  trimSpace: true,
+  breakpoints: {
+    991: {
+      // Tablet
+      perPage: 2,
+  		perMove: 1,
+      fixedWidth : '3.35rem',
+  		fixedHeight: '4.88rem',
+    },
+    479: {
+      // Mobile Portrait
+      perPage: 1,
+  		perMove: 1,
+      fixedWidth : '2.4rem',
+      fixedHeight: '3.66rem',
+    }
+  }
+}).mount();
+let mySplide2 = new Splide(".slider-blog", {
+  // Desktop on down
+  perPage: 2,
+  perMove: 1,
+  fixedWidth : '3.35rem',
+  fixedHeight: '4.88rem',
+  type: 'slide',
+  arrows: 'slider',
+  pagination: false,
+  speed: 600,
+  dragAngleThreshold: 60,
+  waitForTransition: true,
+  updateOnMove: true,
+  trimSpace: true,
+  breakpoints: {
+    991: {
+      // Tablet
+      perPage: 2,
+  		perMove: 1,
+      fixedWidth : '2.54rem',
+      fixedHeight: '5.46rem',
+      gap: '0.1rem',
+      focus: 0
+    },
+    479: {
+      // Mobile Portrait
+      perPage: 1,
+  		perMove: 1,
+      fixedWidth : '2.54rem',
+      fixedHeight: '5.4rem',
+      gap: '0.1rem',
+      focus: 0
+    }
+  }
+}).mount();
+</script>
+</body>
+</html>
